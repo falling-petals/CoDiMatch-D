@@ -7,11 +7,12 @@
     "codimatch_d/cross_layer_retrieval.py": "29da948be164cf01f25129636fbfb3ab0675d848be3a61f173d5ca731c774784",
     "codimatch_d/shrinkage_metric.py": "3633499c71686419e3ed23a110d99754063aedb79511291dd4466574546d61cd",
     "demo.py": "d2983589ecca71d49c4fe1d186f9c238c9cef947753a17b6d30a0515bf08bff4",
-    "provenance.json": "9b97ae499d2dde7958411511a1f2fd69cfcfe051e9042c8bb5404ee134f2a6d4",
-    "README.md": "8d61ace310c391604f9b12a2c14834c67bbf7608e2e5c5baf7e390db510d0e56",
+    "provenance.json": "891c57797f2269ccd1e4d671c4b5e117a7f38c7b54ab283cfaf47902ce2d0d85",
+    "README.md": "d22db5dc5af6d552792099441a88b73ce940965a3c95bbe95c82eac29084b4e8",
     "requirements.txt": "9c7b6a613f222ac28360ee4c8d0b2d071f1b6b72e8b8197c9c7d59622194ddc3",
     "results/case-summary.csv": "272fc2839ae0f3b4fa9e3c92f091d00f2b6bcc0ca028fbda98a3c4eadbe92838",
     "results/removal-deltas.csv": "94f604d2d6ddb09b9c1f963fe1bd92419db9ca98f214561643687e4dfeb49844",
-    ".gitattributes": "a9f0afbaf6cbc16ac1cc8aac4e4d3a37cd3bbdd0e309489293120ca94ea5d8b9"
+    ".gitattributes": "a9f0afbaf6cbc16ac1cc8aac4e4d3a37cd3bbdd0e309489293120ca94ea5d8b9",
+    "LICENSE": "4757170c3806c06ea8d915713797a31e971b7c6c6774ba98b9862e7319963243"
   }
 }

@@ -36,7 +36,7 @@ Related methods include AnomalyDINO, MuSc+ and covariance-aware patch retrieval.
 
 ## Licensing
 
-This repository does not specify a license for the project code. The dependency packages retain their own licenses. Dataset images, model weights, and experiment caches are not included.
+The CoDiMatch-D source code is released under the [MIT License](LICENSE). The dependency packages retain their own licenses. Dataset images, model weights, and experiment caches are not included.
 
 ## Results
 
