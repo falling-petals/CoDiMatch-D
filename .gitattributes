@@ -1,0 +1,3 @@
+# Preserve bytes used by the saved-results and release hash checks.
+* -text
+*.csv whitespace=cr-at-eol

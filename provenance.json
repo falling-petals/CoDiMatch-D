@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-07",
+  "scope": "descriptor API and saved table arithmetic",
+  "real_data_experiments_during_packaging": 0,
+  "sources": {
+    "src\\indsurf\\shrinkage_metric.py": "3633499c71686419e3ed23a110d99754063aedb79511291dd4466574546d61cd",
+    "src\\indsurf\\cross_layer_retrieval.py": "1196c6a08140720e79134d60c73df9de471f38f3a0f7c8b45dfb485275ec810d"
+  },
+  "files": {
+    ".gitignore": "e99f6ee4eb88882ea6589ecb717e10a41401763241b246b6821bc091cfe2227e",
+    "check_saved_table.py": "b30b93a8b124b4e61c46f4fd8c56793a76bd6e95e4acb7efbd45d29ad8819ad1",
+    "codimatch_d\\__init__.py": "7cab8774d3b0ba399536450837611b84e9fb3f3578a50acc1ef1dd4048743c52",
+    "codimatch_d\\context.py": "c5b2c89c46b7c153b0c424af88288e11e88f04790d904da714ae1c73728da743",
+    "codimatch_d\\cross_layer_retrieval.py": "29da948be164cf01f25129636fbfb3ab0675d848be3a61f173d5ca731c774784",
+    "codimatch_d\\shrinkage_metric.py": "3633499c71686419e3ed23a110d99754063aedb79511291dd4466574546d61cd",
+    "demo.py": "d2983589ecca71d49c4fe1d186f9c238c9cef947753a17b6d30a0515bf08bff4",
+    "README.md": "8d61ace310c391604f9b12a2c14834c67bbf7608e2e5c5baf7e390db510d0e56",
+    "requirements.txt": "9c7b6a613f222ac28360ee4c8d0b2d071f1b6b72e8b8197c9c7d59622194ddc3",
+    "results\\case-summary.csv": "272fc2839ae0f3b4fa9e3c92f091d00f2b6bcc0ca028fbda98a3c4eadbe92838",
+    "results\\removal-deltas.csv": "94f604d2d6ddb09b9c1f963fe1bd92419db9ca98f214561643687e4dfeb49844",
+    ".gitattributes": "a9f0afbaf6cbc16ac1cc8aac4e4d3a37cd3bbdd0e309489293120ca94ea5d8b9"
+  }
+}
