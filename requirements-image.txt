@@ -1,0 +1,6 @@
+-r requirements.txt
+torch>=2.5
+torchvision>=0.20
+opencv-python-headless>=4.10
+Pillow>=10
+scipy>=1.14

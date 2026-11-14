@@ -1,2 +1,8 @@
 __pycache__/
 .venv/
+
+dinov2/
+dinov2_vits14_pretrain.pth
+/data/
+/models/
+/predictions/

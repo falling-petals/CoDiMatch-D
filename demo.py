@@ -16,7 +16,6 @@ def main() -> None:
     faiss.omp_set_num_threads(2)
     faiss.cvar.distance_compute_blas_threshold = 128000
     rng = np.random.default_rng(17)
-    # Four artificial original sources, each with two 2x3 views and four channels.
     grids = [(2, 3)] * 8
     source_ids = np.repeat(np.arange(4), 12)
     bank_layers = rng.uniform(-0.4, 1, (2, 48, 4)).astype(np.float32)

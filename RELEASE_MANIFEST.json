@@ -1,18 +1,21 @@
 {
   "files": {
-    ".gitignore": "e99f6ee4eb88882ea6589ecb717e10a41401763241b246b6821bc091cfe2227e",
+    ".gitattributes": "a9f0afbaf6cbc16ac1cc8aac4e4d3a37cd3bbdd0e309489293120ca94ea5d8b9",
+    ".gitignore": "3e3c033d0b4e79be47006908c04e56cbf99e6c8f792d9a9df10a506833336c32",
+    "LICENSE": "735d01a1f7eef981907aefbe24093f0e45bab710c87a6b3e9e158201fcf3a0e2",
+    "README.md": "e79a33bed26e329c74d51e73b37ef8d5c58f7027abb0199724215f6adc813095",
     "check_saved_table.py": "b30b93a8b124b4e61c46f4fd8c56793a76bd6e95e4acb7efbd45d29ad8819ad1",
     "codimatch_d/__init__.py": "7cab8774d3b0ba399536450837611b84e9fb3f3578a50acc1ef1dd4048743c52",
-    "codimatch_d/context.py": "c5b2c89c46b7c153b0c424af88288e11e88f04790d904da714ae1c73728da743",
-    "codimatch_d/cross_layer_retrieval.py": "29da948be164cf01f25129636fbfb3ab0675d848be3a61f173d5ca731c774784",
-    "codimatch_d/shrinkage_metric.py": "3633499c71686419e3ed23a110d99754063aedb79511291dd4466574546d61cd",
-    "demo.py": "d2983589ecca71d49c4fe1d186f9c238c9cef947753a17b6d30a0515bf08bff4",
-    "provenance.json": "9f54e4bc00765a638a3706dbe4a809eaff0ebd10370e3d6e83c05bcddee56ea7",
-    "README.md": "d22db5dc5af6d552792099441a88b73ce940965a3c95bbe95c82eac29084b4e8",
+    "codimatch_d/__main__.py": "a9f32f9ca309b1067169398b6eefcbd5914b2571d4a1c9a84d418597ac801e18",
+    "codimatch_d/context.py": "0255a912fe7534ac04d53a3cd16ac67e1c7053166a61032cfa86c78934d6e6e3",
+    "codimatch_d/cross_layer_retrieval.py": "6c1991f7f33de9176844b5615da29906837b7e42433a11624696651aef754112",
+    "codimatch_d/images.py": "e4462405dedab2fde707186ce78417e3cb054e8d4d75f27f29a8869ee1f1a7e9",
+    "codimatch_d/shrinkage_metric.py": "6d4aa402b068e8ddeedef34f7b4e7d3aa772597de02862eb9c5e840a8adcf1a9",
+    "demo.py": "bf19ec153adc5daa145decdc4409fd2f6adb1f4e268a05a21741a9afae438e4c",
+    "provenance.json": "1f300392ee66ec078dad0cc3d8100216b4a10df2f1e0ead96688be631a5b704d",
+    "requirements-image.txt": "7df1f8f03b3776b60840e49a1bd38feb8dffd372ee428625e82d180e83aef982",
     "requirements.txt": "9c7b6a613f222ac28360ee4c8d0b2d071f1b6b72e8b8197c9c7d59622194ddc3",
     "results/case-summary.csv": "272fc2839ae0f3b4fa9e3c92f091d00f2b6bcc0ca028fbda98a3c4eadbe92838",
-    "results/removal-deltas.csv": "94f604d2d6ddb09b9c1f963fe1bd92419db9ca98f214561643687e4dfeb49844",
-    ".gitattributes": "a9f0afbaf6cbc16ac1cc8aac4e4d3a37cd3bbdd0e309489293120ca94ea5d8b9",
-    "LICENSE": "735d01a1f7eef981907aefbe24093f0e45bab710c87a6b3e9e158201fcf3a0e2"
+    "results/removal-deltas.csv": "94f604d2d6ddb09b9c1f963fe1bd92419db9ca98f214561643687e4dfeb49844"
   }
 }

@@ -1,9 +1,4 @@
-"""Normal-source-balanced shrinkage transforms for the existing cosine search.
-
-Covariance fitting uses unit descriptors. The fitted linear map is applied to
-raw descriptors without subtracting a mean; the existing retrieval path then
-normalizes them. This is an angular metric, not unnormalized Mahalanobis NN.
-"""
+"""Shrinkage transforms for cosine search."""
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -22,12 +17,7 @@ class ShrinkageAngularMetric:
     @classmethod
     def fit(cls, features: np.ndarray, source_ids: np.ndarray, *,
             shrinkage: float = .07, diagonal: bool = False) -> ShrinkageAngularMetric:
-        """Fit equal original-source population moments, retaining every channel.
-
-        Rotations and retained patches within one source share that source's
-        total weight. Shrinkage is towards trace-normalized identity. Its common
-        scalar is immaterial after cosine normalization; lambda=1 is identity.
-        """
+        """Fit on unit descriptors with equal weight per normal image."""
         if (isinstance(shrinkage, (bool, np.bool_))
                 or not isinstance(shrinkage, (int, float, np.floating))
                 or not np.isfinite(shrinkage) or not 0 < shrinkage <= 1
@@ -79,11 +69,7 @@ class ShrinkageAngularMetric:
         })
 
     def transform(self, features: np.ndarray) -> np.ndarray:
-        """Return raw transformed FP32 rows; caller retains original normalization.
-
-        The explicit identity path preserves raw bytes for an exact AB witness.
-        No caller array or fitted matrix is mutated, and no query is fitted.
-        """
+        """Apply the fitted matrix without centering or normalization."""
         values = np.array(features, dtype=np.float32, order='C', copy=True)
         if (values.ndim != 2 or values.shape[1] != self.matrix.shape[0]
                 or not np.isfinite(values).all()):

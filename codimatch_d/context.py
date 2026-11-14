@@ -10,12 +10,7 @@ def _positive_int(value: int) -> bool:
 
 
 def pool_grid(features: np.ndarray, grid: tuple[int, int], degree: int) -> np.ndarray:
-    """Return valid-neighbor FP32 means; never modify features or crop tokens.
-
-    Border windows use only in-bounds neighbors. A zero vector produced by
-    cancellation is returned unchanged here and rejected by retrieval's unit
-    normalization, rather than receiving a fabricated descriptor.
-    """
+    """Average in-bounds neighbors for each patch."""
     if len(grid) != 2 or not all(_positive_int(v) for v in grid):
         raise ValueError("grid must be two positive integers")
     if not _positive_int(degree) or degree % 2 != 1:
@@ -41,7 +36,7 @@ def pool_grid(features: np.ndarray, grid: tuple[int, int], degree: int) -> np.nd
 
 def pool_reference_views(features: np.ndarray, grids: Sequence[tuple[int, int]],
                          degree: int) -> np.ndarray:
-    """Pool each recorded view independently, preventing cross-view leakage."""
+    """Pool each reference view on its own grid."""
     if not grids:
         raise ValueError("at least one reference-view grid is required")
     if any(len(g) != 2 or not all(_positive_int(v) for v in g) for g in grids):

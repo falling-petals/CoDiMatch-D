@@ -8,7 +8,6 @@ def _normalized(values: np.ndarray, name: str) -> np.ndarray:
     result = np.array(values, dtype=np.float32, order="C", copy=True)
     if result.ndim != 2 or not result.shape[1] or not np.isfinite(result).all():
         raise ValueError(f"{name} must be finite (N, D) features with D > 0")
-    # FP64 is validation only; normalization matches the frozen author path.
     norms = np.sqrt(np.einsum("ij,ij->i", result, result, dtype=np.float64))
     if np.any(norms == 0):
         raise ValueError(f"{name} must contain nonzero feature rows")
